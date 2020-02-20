@@ -2,20 +2,18 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-class LandingPage extends React.Component() {
+class LandingPage extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      page: "Home"
+      page: "LandingPage"
     };
   }
 
   render() {
-    if (this.state === "Home") {
-      return (<Home></Home>);
-    } else if (this.state === "About") {
-      return (<About></About>);
+    if (this.state === "LandingPage") {
+      return (<LandingPage></LandingPage>);
     }
 
     return (
@@ -41,7 +39,7 @@ class LandingPage extends React.Component() {
 }
 
 
-class LoginPage extends React.Component()
+class LoginPage extends React.Component
 {
 
 
