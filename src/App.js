@@ -1,48 +1,53 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'semantic-ui-css/semantic.min.css';
 
-class LandingPage extends React.Component {
+
+class PageOne extends React.Component {
+  render() {
+    return (<div>
+       <header className="App-header">
+      YelpMyProfessors
+      </header>
+        <p>Page One</p>
+    </div>);
+  }
+}
+
+class PageTwo extends React.Component {
+  render() {
+    return (
+    <div>
+      <header className="App-header">
+      YelpMyProfessors
+      </header>
+      <p>Page Two</p>
+    </div>);
+  }
+}
+
+export class LandingPage extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
-      page: "LandingPage"
+      page: "PageOne"
     };
   }
 
   render() {
-    if (this.state === "LandingPage") {
-      return (<LandingPage></LandingPage>);
+    if (this.state.page === "PageOne") {
+      return (
+      <div>
+        <PageOne />
+        <button onClick={() => this.setState({page: "PageTwo"})}>Page Two</button>
+      </div>)
     }
 
     return (
-      <div className="LandingPage">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <PageTwo />
+        <button onClick={() => this.setState({page: "PageOne"})}>Page One</button>
       </div>
-    );
-
+    )
   }
 }
-
-
-class LoginPage extends React.Component
-{
-
-
-}
-
-export default LandingPage;
