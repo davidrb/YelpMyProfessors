@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
 import 'semantic-ui-css/semantic.min.css';
-
+import SearchExampleStandard from './Search';
 
 class PageOne extends React.Component {
   render() {
     return (<div>
        <header className="App-header">
       YelpMyProfessors
+
+      
       </header>
         <p>Page One</p>
     </div>);
