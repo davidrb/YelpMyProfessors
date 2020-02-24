@@ -8,8 +8,6 @@ class PageOne extends React.Component {
     return (<div>
        <header className="App-header">
       YelpMyProfessors
-
-      
       </header>
         <p>Page One</p>
     </div>);

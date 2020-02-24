@@ -3,8 +3,67 @@ A RateMyProfessors-type clone for rating teacher effectiveness. UH Manoa edition
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
+## 1) Current Progress
+A template which switches between states (in this case, pages) has been set up.
+The Database schema has been designed.
+
+
+## 2) Pending
+- Home, Profile, and ProfessorProfile pages / page designs
+- 
+
+## 3) List of Team members and their next steps
+Alice Chen - Connect to the MariaDB database, generate test data, get the search bar working with values in the DB, get basic CRUD operations working.
+Sharie Mamuad - Design 
+JiaQi Li - Design 
+
+
+## Setup README
+
+This project will not be hosted so a data dump of the SQL commands and test data will be included to setup a DB locally.
+
+
+
+## To start the program
+yarn install
+yarn start
+
+If you don't have yarn,
+npm install -g yarn
+
+## Git commands
+### commiting changes
+git add .
+git commit -m "write message here"
+git push origin branchName
+
+### switch between branches
+git branch -a
+git checkout branchName
+
+## Useful commands
+mysql -u root -p
+mysql -u test -p
+show databases;
+use databaseName;
+show tables;
+GRANT ALL PRIVILEGES ON test.* TO 'test'@'localhost';
+yarn add libraryName
+
+## DB tables 
+This project will be using a DB named test which instructions to run locally will be documented for (it will include test data as well).
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              6yfgvy]\
+'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ])
+
+
+
+## Available Scripts
+g
 In the project directory, you can run:
 
 ### `yarn start`
@@ -69,3 +128,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+`
